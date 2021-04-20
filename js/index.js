@@ -5,11 +5,12 @@
   var second=date.getSeconds();
 
   var val ;
-  val =24;
+  val =12;
   if(val == 12)
 {
     twelveHourClock();
-    document.getElementById("onlineClock").innerHTML =hours + " : " + minute + " : " +second +" "+ amORpm;
+    document.getElementById("onlineClock").innerHTML =hours + " : " 
+      + minute + " : " +second +" "+ ampm;
 
 }
 else if(val == 24){
@@ -26,7 +27,7 @@ function twentyFourHourClock()
 
 function twelveHourClock()
 {
-  amORpm=setAmPm(hours);
+  ampm=setAmPm(hours);
   hours=twelveHourFormat(hours);
   formattedClock();
   
